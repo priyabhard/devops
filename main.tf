@@ -2,7 +2,7 @@ provider "aws"{
   region = "us-east-1"
   }
  
-for windows:
+# for windows:
   resource "aws_instance" "my-ec2"{
   instance_type=var.instance_type
   ami = var.ec2_ami
@@ -11,7 +11,7 @@ for windows:
   }
   }
   
-for linux:
+# for linux:
   resource "aws_instance" "my-ec2"{
   instance_type=var.instance_type
   ami = var.ec2_ami
