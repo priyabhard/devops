@@ -1,4 +1,4 @@
-for windows:
+# for windows:
   variable "instance_type" {
     description = "instance type"
     type        = string
@@ -14,7 +14,7 @@ for windows:
     default     = "windows"
   }
   
-for linux:
+# for linux:
   variable "instance_type" {
     description = "instance type"
     type        = string
