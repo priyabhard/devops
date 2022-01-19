@@ -11,7 +11,7 @@
   }
   variable "instance_name" {
     type        = string
-    default     = "windows"
+    default     = "Ec2"
   }
   
 # for linux:
@@ -27,7 +27,7 @@
   }
   variable "instance_name" {
     type        = string
-    default     = "linux"
+    default     = "Ec2"
   }
   
   
