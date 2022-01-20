@@ -6,8 +6,8 @@
   }
 
   variable "ec2_ami" {
-    default={ "linux" = "ami-08eecc65e6189066d"
-   "windows" = "ami-07eecc65e6189066g"
+    default={ "linux" = "ami-08e4e35cccc6189f4"
+   "windows" = "ami-0d43d465e2051057f"
     }
   }
 
