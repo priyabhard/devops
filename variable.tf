@@ -1,4 +1,4 @@
-# for windows:
+
   variable "instance_type" {
     description = "instance type"
     type        = string
@@ -11,22 +11,11 @@
     }
   }
 
+  variable "name" {
+    type        = string
+    default     = "Ec2"
+  }
+  
 
-  variable "instance_name" {
-    type        = string
-    default     = "Ec2"
-  }
-  
-# for linux:
-  variable "instance_type" {
-    description = "instance type"
-    type        = string
-    default     = "t2.micro"
-  }
-  
-  variable "instance_name" {
-    type        = string
-    default     = "Ec2"
-  }
   
   
