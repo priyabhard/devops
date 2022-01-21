@@ -4,9 +4,10 @@ provider "aws"{
  
   resource "aws_instance" "my-ec2"{
   instance_type=var.instance_type
-  ami = lookup(var.ec2_ami, var.name)
+  count = length(var.instance_names)
+  ami = lookup(var.ec2_ami, var.instance_names)
   tags={
-  Name = var.name
+  Name = var.instance_names
   }
   }
   
