@@ -5,8 +5,8 @@ variable "instance_type" {
   }
 
   variable "ec2_ami" {
-    default={"linux" = "ami-08e4e35cccc6189f4" && "ami-083602cee93914c0c"}
-   {"windows" = "ami-0d43d465e2051057f" && "ami-0b2048a9d4fca3418"}
+    default= ["linux" = "ami-08e4e35cccc6189f4", "ami-083602cee93914c0c"]
+   ["windows" = "ami-0d43d465e2051057f", "ami-0b2048a9d4fca3418"]
   }
 
  variable "instance_names" {
