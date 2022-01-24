@@ -15,6 +15,11 @@ variable "instance_type" {
     default     = "Ec2"
   }
 
+  variable "bucket_prefix" {
+    type          = string
+    description   = "creates a unique bucket name beginning with the specified prefix"
+    
+
   
 
   
